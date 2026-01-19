@@ -1,27 +1,74 @@
-🛒 Python & SQL Ecommerce Project
-📌 About the Project
-This project is a hands‑on exploration of an Ecommerce dataset using Python and SQL. The goal is simple: turn raw data into clear business insights that recruiters, collaborators, or hiring managers can quickly understand.
+🛒 Ecommerce Business Intelligence Analysis
 
-⚙️ Tools Used
-Python: Pandas, NumPy, Matplotlib, Seaborn
+Bridging Data Engineering and Strategic Insights
 
-SQL: MySQL / SQLite for queries
+📌 Project Overview
+In the world of online retail, data is the heartbeat of decision-making. This project explores a massive ecommerce dataset (Olist) to solve real-world business problems. I built a pipeline to ingest raw CSV data into a MySQL database, performed complex analytical queries, and used Python to visualize trends that impact growth and retention.
 
-Jupyter Notebook: for interactive analysis
+The Goal: To transform thousands of rows of customer, order, and payment data into a clear story about business health.
 
-🔑 What’s Inside
-SQL queries answering real business questions (e.g., repeat purchase rates, sales trends).
+⚙️ Technical Toolkit
 
-Python visualizations that make the numbers easy to grasp.
+Database: MySQL (Relational schema design, complex Joins, Window Functions)
 
-Insights on customer behavior, product performance, and retention challenges.
+Languages: Python (Pandas, NumPy)
 
-📂 Repo Contents
-Python & SQL Ecommerce Project.ipynb → Main notebook with analysis
+Visualization: Matplotlib, Seaborn
 
-Questions.txt → Business questions driving the queries
+Environment: Jupyter Notebook
 
-README.md → Project overview
+Concepts: ETL (Extract, Transform, Load), Exploratory Data Analysis (EDA), Year-over-Year (YoY) Growth, Moving Averages.
 
-🎯 Why It Matters
-This project shows how I combine technical skills (SQL, Python, data visualization) with business storytelling. It’s not just about code—it’s about making data useful and human‑friendly.
+🔑 Business Questions Answered
+
+I focused on five core pillars of ecommerce health:
+
+Revenue Growth: Calculated Year-over-Year (YoY) growth and cumulative sales to track the platform's scaling trajectory.
+
+Customer Behavior: Analyzed the moving average of order values per customer to identify spending patterns.
+
+Operational Efficiency: Evaluated order count trends per month and identified monthly peaks to help with inventory planning.
+
+Market Analysis: Ranked product categories by revenue and calculated their percentage contribution to total sales.
+
+Seller Performance: Identified and ranked top-performing sellers based on total revenue generated.
+
+📂 Project Structure
+
+Python & SQL Ecommerce Project.ipynb: The complete end-to-end technical workflow.
+
+ETL Phase: Python script to handle NaN values, clean column headers, and dynamically create MySQL tables.
+
+Analysis Phase: 15+ Advanced SQL queries utilizing CTEs (Common Table Expressions) and Window Functions (DENSE_RANK, LAG, PARTITION BY).
+
+Visualization Phase: Visual representations of geographic distribution, seasonal trends, and revenue ranks.
+
+📈 Key Insights & Findings
+
+Growth Spikes: Identified a massive YoY growth percentage between 2016 and 2017, marking the platform's market entry success.
+
+Retention: Developed a retention rate logic to monitor customers making repeat purchases within 6 months.
+
+Top Contributors: Found that categories like Bed Table Bath and Health Beauty are the primary revenue drivers, contributing significantly to the total GMV.
+
+🎯 Why This Matters
+
+This project isn't just about writing code; it's about Business Storytelling. I demonstrated the ability to:
+
+Handle the "messy" part of data (ETL and cleaning).
+
+Write production-level SQL for high-performance analysis.
+
+Translate technical outputs into visual insights that a Marketing or Operations Manager could use to make a decision.
+
+🚀 How to Run
+
+Ensure you have a local MySQL instance running.
+
+Update the database credentials in the notebook connection string.
+
+Install dependencies: pip install pandas mysql-connector-python matplotlib seaborn.
+
+Run the cells in order to process the raw data and generate the report.
+
+Contact: Abhishek Upadhayay | aupadhayay0211@gmail.com
